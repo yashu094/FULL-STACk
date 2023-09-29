@@ -1,0 +1,81 @@
+<html>
+<head>
+    <style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg');
+            background-size: cover;
+        
+    }
+
+/* Style the login container */
+    .outcontainer {
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f3f3f3;
+        position: absolute;
+        top: 30%;
+        right: 40%;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+
+/* Style the heading */
+    .outcontainer h2 {
+        margin-top: 0;
+        color: #333;
+    }
+
+/* Style the form inputs and labels */
+    .incontainer {
+        margin-bottom: 15px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        font-size: 16px;
+    }
+
+/* Style the login button */
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 3px;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+/* Additional styling can be added based on your preferences */
+
+
+    </style>
+</head>
+<body>
+    <h1>SIGN UP HERE !!!</h1>
+    <div class="outcontainer">
+    <form action="/signupsubmit" method="POST">
+        <div class="incontainer">FIRST NAME: <input type="text" name="first_name"> <br></div>
+        <div class="incontainer">LAST NAME: <input type="text" name="last_name"> <br></div>
+        <div class="incontainer">EMAIL ID: <input type="text" name="email_id"> <br></div>
+        <div class="incontainer">PASSWORD: <input type="password" name="pass"> <br></div>
+        <button type="submit">SignUp</button>
+    </form>
+    </div>
+            
+</body>
+</html>
